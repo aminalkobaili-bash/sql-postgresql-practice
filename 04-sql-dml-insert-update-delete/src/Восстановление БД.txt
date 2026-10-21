@@ -1,2 +1,0 @@
-wsl sudo -u postgres psql -d sql_school21 -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
-wsl sudo -u postgres psql -d sql_school21 -f /mnt/d/project21/SQL/SQLB4_DML.ID_574090-1/materials/model.sql

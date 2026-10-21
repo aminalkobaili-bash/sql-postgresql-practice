@@ -1,5 +1,5 @@
 ALTER TABLE person_discounts ALTER COLUMN id DROP DEFAULT;
-DROP SEQUENCE seq_person_discounts;
+DROP SEQUENCE IF EXISTS seq_person_discounts;
 
 CREATE SEQUENCE seq_person_discounts START 1;
 

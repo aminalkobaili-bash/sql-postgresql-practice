@@ -1,7 +1,7 @@
-ALTER TABLE person_discounts DROP CONSTRAINT ch_nn_person_id;
-ALTER TABLE person_discounts DROP CONSTRAINT ch_nn_pizzeria_id;
-ALTER TABLE person_discounts DROP CONSTRAINT ch_nn_discount;
-ALTER TABLE person_discounts DROP CONSTRAINT ch_range_discount;
+ALTER TABLE person_discounts DROP CONSTRAINT IF EXISTS ch_nn_person_id;
+ALTER TABLE person_discounts DROP CONSTRAINT IF EXISTS ch_nn_pizzeria_id;
+ALTER TABLE person_discounts DROP CONSTRAINT IF EXISTS ch_nn_discount;
+ALTER TABLE person_discounts DROP CONSTRAINT IF EXISTS ch_range_discount;
 ALTER TABLE person_discounts ALTER COLUMN discount DROP DEFAULT;
 
 ALTER TABLE person_discounts ADD CONSTRAINT ch_nn_person_id CHECK (person_id IS NOT NULL);
